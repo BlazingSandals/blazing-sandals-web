@@ -1,16 +1,31 @@
+
+
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <img alt="Vue logo" src="./assets/icon-transparent.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <header>
+    <nav>
+      <RouterLink to="/intro">Home</RouterLink>
+      <RouterLink to="/resume-search">My resume search tool</RouterLink>
+    </nav>
+  </header>
+  <Intro msg="Blazing Sandals Consulting"/>
+  <img width="500px" alt="My logo" src="./assets/icon-transparent.png">
+  <p></p>
+  <p></p>
+  <h2>Check out this cool stuff did I</h2>
+  <p></p>
+
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from 'vue-router'
+import Intro from './components/Intro.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Intro
   }
 }
 </script>
